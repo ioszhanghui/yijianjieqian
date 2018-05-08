@@ -1,0 +1,29 @@
+//
+//  DefaultSet.pch
+//  yijianjieqian
+//
+//  Created by zhph on 2018/3/21.
+//  Copyright © 2018年 正和普惠. All rights reserved.
+//
+
+#ifndef DefaultSet_pch
+#define DefaultSet_pch
+
+#import "ImportFile.h"
+
+//RGB颜色设置
+#define kSetUpCololor(RED,GREEN,BLUE,ALPHA) [UIColor colorWithRed:RED/255.0 green:GREEN/255.0 blue:BLUE/255.0 alpha:ALPHA]
+//16进制颜色设置
+#define UIColorWithRGB(rgbValue, alphaValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0x00FF00) >> 8))/255.0 blue:((float)(rgbValue & 0x0000FF))/255.0 alpha:alphaValue]
+//window窗口
+#define kWindow [UIApplication sharedApplication].keyWindow
+/********************数据的判断处理*******************/
+/**判断字符串是否为空*/
+#define NULLString(string) ((string == nil) ||[string isEqualToString:@""] ||([string length] == 0)  || [string isKindOfClass:[NSNull class]] || [[string stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] length] == 0 ||[string isEqual:[NSNull null]])
+
+//数组是否为空
+#define kArrayIsEmpty(array) (array == nil || [array isKindOfClass:[NSNull class]] || array.count == 0)
+//字典是否为空
+#define kDictIsEmpty(dic) (dic == nil || ![dic isKindOfClass:[NSDictionary class]] || dic.allKeys == 0)
+
+#endif /* DefaultSet_pch */

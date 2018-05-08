@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZHMineViewController">
+            <connections>
+                <outlet property="view" destination="cko-Gh-G5a" id="d0Y-rY-FpU"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="cko-Gh-G5a">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Mjo-AA-JGd">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Mjo-AA-JGd" firstAttribute="leading" secondItem="cko-Gh-G5a" secondAttribute="leading" id="T0O-7T-B5Q"/>
+                <constraint firstItem="Mjo-AA-JGd" firstAttribute="top" secondItem="cko-Gh-G5a" secondAttribute="top" id="ZKg-R2-zWd"/>
+                <constraint firstAttribute="bottom" secondItem="Mjo-AA-JGd" secondAttribute="bottom" id="dPa-FR-7fd"/>
+                <constraint firstAttribute="trailing" secondItem="Mjo-AA-JGd" secondAttribute="trailing" id="sqr-je-Nzi"/>
+            </constraints>
+            <point key="canvasLocation" x="-300" y="2"/>
+        </view>
+    </objects>
+</document>
